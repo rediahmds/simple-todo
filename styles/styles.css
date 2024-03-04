@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body {
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    color: #4CAF50;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.input-container-wrapper {
+    display: flex; 
+    flex-direction: column; 
+    align-items: stretch; 
+  width: 100%;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px; 
+}
+
+button {
+    flex: 1;
+    padding: 12px 24px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%; 
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 1px solid #ccc;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+.task-text {
+    flex: 1;
+    font-size: 16px;
+}
+
+.delete-button {
+    background-color: #f44336;
+}
+
+/* Flexbox for Responsiveness */
+main {
+    display: flex;
+    flex: 1;
+    /* flex-direction: column; */
+    margin: 1rem;
+}
+
+main > article {
+    flex: 1;
+    margin-right: 20px;
+}
+
+aside {
+    flex-basis: 300px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+}
+
+aside h2 {
+    color: #4CAF50;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+aside p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.image-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.image-container img {
+    max-width: 50%;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #4CAF50;
+    color: #fff;
+    text-align: center; 
+    padding: 10px 0;
+}
+
+/* Media Queries */
+@media screen and (max-width: 600px) {
+    .input-container {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    input[type="text"] {
+        margin: 10px 0;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    main > article {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+  }
+  

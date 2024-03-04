@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple To-Do List</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Simple To-Do List</h1>
+    </header>
+    <main>
+      <article class="container">
+        <div class="input-container">
+          <div class="input-container-wrapper">
+            <input type="text" id="task" placeholder="Enter your task" />
+            <button onclick="addTask()">Add</button>
+          </div>
+        </div>
+        <div class="task-sections">
+          <h2>Not Done (<span id="notDoneCounter">0</span>)</h2>
+          <ul id="taskList">
+            <!-- Task yang belum dicentang akan diletakkan di sini via JS-->
+          </ul>
+          <h2>Done (<span id="doneCounter">0</span>)</h2>
+          <ul id="completedTaskList">
+            <!-- Task yang dicentang akan diletqkan di sini via JS -->
+          </ul>
+        </div>
+      </article>
+      <aside>
+        <div class="about-section">
+          <h2>About</h2>
+          <div class="image-container">
+            <img src="./assets/images/profile.jpeg" alt="App Image" />
+          </div>
+          <p>
+            Halo, nama saya Alda Emly Tambunan. Saya seorang mahasiswa Sistem
+            Komputer yang lebih menyukai web programming.
+          </p>
+        </div>
+      </aside>
+    </main>
+    <footer>
+      <p>&copy; 2024 Alda Tambunan. All rights reserved.</p>
+    </footer>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
